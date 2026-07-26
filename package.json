@@ -1,5 +1,5 @@
 {
-  "name": "markdown-postman",
+  "name": "foldermark",
   "version": "1.0.0",
   "private": true,
   "description": "Build-time Markdown reader with folder indexes and stable ID routes.",

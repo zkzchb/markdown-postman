@@ -1,4 +1,4 @@
-# Markdown Postman
+# FolderMark
 
 一个轻量、无数据库、按文件夹组织内容的 Markdown 阅读站点。
 
@@ -437,7 +437,7 @@ index.html
 `src/main.js` 中：
 
 ```js
-const siteName = "Markdown Postman";
+const siteName = "FolderMark";
 ```
 
 ### 阅读样式

@@ -1,6 +1,6 @@
 # 构建与部署指南
 
-本文档说明如何把 Markdown Postman 部署到 Cloudflare Workers，包括：
+本文档说明如何把 FolderMark 部署到 Cloudflare Workers，包括：
 
 - 本地构建；
 - GitHub 自动部署；
@@ -86,7 +86,7 @@ git --version
 
 ```jsonc
 {
-  "name": "markdown-postman"
+  "name": "foldermark"
 }
 ```
 

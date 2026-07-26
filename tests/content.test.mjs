@@ -10,7 +10,7 @@ const testDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(testDirectory, "..");
 const fixtureRoot = path.join(testDirectory, "fixtures");
 const temporaryRoot = await mkdtemp(
-  path.join(tmpdir(), "markdown-postman-"),
+  path.join(tmpdir(), "foldermark-"),
 );
 const publicRoot = path.join(temporaryRoot, "public");
 const contentRoot = path.join(publicRoot, "_content");
@@ -22,9 +22,9 @@ execFileSync(
     cwd: projectRoot,
     env: {
       ...process.env,
-      REFERENCE_MARKDOWN_ROOT: path.join(fixtureRoot, "markdown"),
-      REFERENCE_PUBLIC_ROOT: publicRoot,
-      REFERENCE_ORDER_LEDGER_PATH: path.join(
+      FOLDERMARK_MARKDOWN_ROOT: path.join(fixtureRoot, "markdown"),
+      FOLDERMARK_PUBLIC_ROOT: publicRoot,
+      FOLDERMARK_ORDER_LEDGER_PATH: path.join(
         fixtureRoot,
         "content-order.json",
       ),

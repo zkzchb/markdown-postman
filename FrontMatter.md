@@ -1,6 +1,6 @@
 # Markdown 与 Front Matter 编写指南
 
-本文档专门说明如何为 Markdown Postman 编写内容，包括：
+本文档专门说明如何为 FolderMark 编写内容，包括：
 
 - Markdown 文件应放在哪里；
 - Front Matter 的基本语法；

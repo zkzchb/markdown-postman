@@ -17,16 +17,16 @@ import sanitizeHtml from "sanitize-html";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, "..");
-const markdownRoot = process.env.REFERENCE_MARKDOWN_ROOT
-  ? path.resolve(process.env.REFERENCE_MARKDOWN_ROOT)
+const markdownRoot = process.env.FOLDERMARK_MARKDOWN_ROOT
+  ? path.resolve(process.env.FOLDERMARK_MARKDOWN_ROOT)
   : path.join(projectRoot, "markdown");
-const publicRoot = process.env.REFERENCE_PUBLIC_ROOT
-  ? path.resolve(process.env.REFERENCE_PUBLIC_ROOT)
+const publicRoot = process.env.FOLDERMARK_PUBLIC_ROOT
+  ? path.resolve(process.env.FOLDERMARK_PUBLIC_ROOT)
   : path.join(projectRoot, "public");
 const contentRoot = path.join(publicRoot, "_content");
 const fileRoot = path.join(publicRoot, "_files");
-const orderLedgerPath = process.env.REFERENCE_ORDER_LEDGER_PATH
-  ? path.resolve(process.env.REFERENCE_ORDER_LEDGER_PATH)
+const orderLedgerPath = process.env.FOLDERMARK_ORDER_LEDGER_PATH
+  ? path.resolve(process.env.FOLDERMARK_ORDER_LEDGER_PATH)
   : path.join(projectRoot, "data", "content-order.json");
 const collator = new Intl.Collator("zh-CN", {
   numeric: true,

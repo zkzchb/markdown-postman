@@ -1,7 +1,7 @@
 import "./styles.css";
 
 const app = document.querySelector("#app");
-const siteName = "Markdown Postman";
+const siteName = "FolderMark";
 
 function decodedSegments() {
   return window.location.pathname

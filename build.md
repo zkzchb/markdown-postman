@@ -78,25 +78,7 @@ git --version
 
 ## 3. 准备新的 GitHub 仓库
 
-### 方式 A：直接上传发行包
-
-1. 在 GitHub 创建一个空仓库；
-2. 不要让 GitHub自动创建另一个 README、`.gitignore` 或 License；
-3. 解压本项目；
-4. 在项目目录执行：
-
-```bash
-git init
-git add .
-git commit -m "Initial release"
-git branch -M main
-git remote add origin https://github.com/YOUR_NAME/YOUR_REPOSITORY.git
-git push -u origin main
-```
-
-### 方式 B：把项目设为模板仓库
-
-项目开源后，可以在 GitHub 仓库设置中启用 **Template repository**。其他用户可通过 **Use this template** 创建没有原项目提交历史的新仓库。
+本项目已启用 **Template repository**。可通过 **Use this template** 创建新仓库。
 
 ### 推送前的必要修改
 

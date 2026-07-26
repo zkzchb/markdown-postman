@@ -80,7 +80,7 @@ git --version
 
 本项目已启用 **Template repository**。可通过 **Use this template** 创建新仓库。
 
-### 推送前的必要修改
+### 部署前的必要修改
 
 打开 `wrangler.jsonc`：
 
